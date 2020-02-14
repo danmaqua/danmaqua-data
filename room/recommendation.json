@@ -1,0 +1,33 @@
+{
+    "version": 1,
+    "_description": "订阅界面中将推荐的虚拟主播数据",
+    "data": [
+        {
+            "name": "夏色祭Official",
+            "uid": 336731767,
+            "room": 13946381,
+            "face": "https://i0.hdslb.com/bfs/face/b52b2ebbe0a5b09d748bfe9411458e64291140c0.jpg",
+            "top": "https://i2.hdslb.com/bfs/space/cb1c3ef50e22b6096fde67febe863494caefebad.png",
+            "reason": "Hololive 一期生，清楚（hundun）担当，非常元气也擅长歌唱",
+            "recommender": "Siubeng"
+        },
+        {
+            "name": "湊-阿库娅Official",
+            "uid": 375504219,
+            "room": 14917277,
+            "face": "https://i1.hdslb.com/bfs/face/281753a6f2c08940ce82c36e870633991262a4cf.jpg",
+            "top": "https://i1.hdslb.com/bfs/space/47c14c5521240896ed951a9909537831c2fdd5df.png",
+            "reason": "Hololive 二期生，努力但很冒失的虚拟女仆，喜欢游戏且技术也很强",
+            "recommender": "Siubeng"
+        },
+        {
+            "name": "兔田佩克拉Official",
+            "uid": 443305053,
+            "room": 21560356,
+            "face": "https://i1.hdslb.com/bfs/face/f0c37852be9bc5ffa86733955ad6f3e90478a111.jpg",
+            "top": "https://i0.hdslb.com/bfs/space/81b68930a37589ec3261f56371e54a280e11ece4.png",
+            "reason": "Hololive 三期生，声音高亢独特的兔子，笑声和战术呼吸是特色之一",
+            "recommender": "Siubeng"
+        }
+    ]
+}
