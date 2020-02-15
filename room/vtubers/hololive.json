@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "name": "hololive",
+    "title": "Hololive",
+    "data": [
+        {
+            "uid": "336731767",
+            "room": "13946381",
+            "name": "夏色祭Official",
+            "group": "hololive",
+            "description": "Hololive 一期生",
+            "face": "https://i0.hdslb.com/bfs/face/b52b2ebbe0a5b09d748bfe9411458e64291140c0.jpg"
+        },
+        {
+            "uid": "375504219",
+            "room": "14917277",
+            "name": "湊-阿库娅Official",
+            "group": "hololive",
+            "description": "Hololive 二期生",
+            "face": "https://i1.hdslb.com/bfs/face/281753a6f2c08940ce82c36e870633991262a4cf.jpg"
+        },
+        {
+            "uid": "443305053",
+            "room": "21560356",
+            "name": "兔田佩克拉Official",
+            "group": "hololive",
+            "description": "Hololive 三期生",
+            "face": "https://i1.hdslb.com/bfs/face/f0c37852be9bc5ffa86733955ad6f3e90478a111.jpg"
+        }
+    ]
+}
