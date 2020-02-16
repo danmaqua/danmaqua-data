@@ -4,11 +4,15 @@ Danmaqua API data repository
 这里是存放 Danmaqua 项目 API 数据的仓库，将同步到 GitHub 和 Coding.net（码云）并
 生成静态页面提供临时的 API 服务。
 
-# 文档
+## 文档
 
 暂时没有。
 
-# 贡献须知
+## 数据整理工具
+
+查看 [tools/README.md](./tools/README.md)
+
+## 贡献须知
 
 本数据目前均为人工整理，因此可能会出现数据过时、主观评价等情况。
 
