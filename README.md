@@ -4,9 +4,14 @@ Danmaqua API data repository
 这里是存放 Danmaqua 项目 API 数据的仓库，将同步到 GitHub 和 Coding.net（码云）并
 生成静态页面提供临时的 API 服务。
 
-## 文档
+## 镜像
 
-暂时没有。
+GitHub（主仓库）：https://github.com/danmaqua/danmaqua-data
+Coding.net（中国大陆）：https://fython.coding.net/p/danmaqua/d/damaqua-data/git
+
+## API 文档
+
+[API 文档](https://github.com/fython/danmaqua-android/blob/master/docs/API_DATA.md)
 
 ## 数据整理工具
 
