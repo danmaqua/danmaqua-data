@@ -15,11 +15,19 @@ Coding.net 中国大陆数据仓库：https://fython.coding.net/p/danmaqua/d/dam
 
 ## 如何修改、更新数据
 
-### 修改、更新虚拟主播目录
+### 增加、更新虚拟主播目录
 
 目录数据目前为人工采集，采集目标为在哔哩哔哩拥有官方直播账号的虚拟主播，不限语言地区，非官方认证的转播帐号不予收集。
 
 采集到的虚拟主播以企业/团体分类，个人势的虚拟主播会一并分到一个名为 “个人势” 的团体。
+
+更新方式有以下两种途径：
+
+#### 1. 普通用户
+
+[新建 Issues](https://github.com/danmaqua/danmaqua-data/issues/new) 进行反馈
+
+#### 2. 对 Git 操作熟悉的用户
 
 在 `raw` 目录中， `groups.csv` 负责存放虚拟主播企业/团体的分类，数据列有三列：
 
@@ -40,9 +48,9 @@ Coding.net 中国大陆数据仓库：https://fython.coding.net/p/danmaqua/d/dam
 
 保存信息在 `raw` 文件夹中后，可以使用数据整理工具的 `make_catalog.py` 将 `csv` 数据转换为 `json` 数据并自动更新到 `room` 文件夹中，完成提交推送后，Danmaqua 客户端就能访问到新的数据了。（数据整理工具使用方法请阅读文档。）
 
-### 修改、更新推荐主播
+### 增加、更新推荐主播
 
-目前仅支持提起 Issue 来进行修改。
+目前仅支持 [新建 Issues](https://github.com/danmaqua/danmaqua-data/issues/new) 来进行修改。
 
 ## 数据整理工具
 
