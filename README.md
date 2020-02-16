@@ -1,17 +1,44 @@
-Danmaqua API data repository
+Danmaqua API 数据仓库
 ======
 
-这里是存放 Danmaqua 项目 API 数据的仓库，将同步到 GitHub 和 Coding.net（码云）并
-生成静态页面提供临时的 API 服务。
+这里是存放 Danmaqua 项目 API 数据的仓库，将同步到 GitHub 和 Coding.net（码云）并生成静态页面提供临时的 API 服务。
 
-## 镜像
+## 传送门
 
-GitHub（主仓库）：https://github.com/danmaqua/danmaqua-data
-Coding.net（中国大陆）：https://fython.coding.net/p/danmaqua/d/damaqua-data/git
+GitHub 主数据仓库：https://github.com/danmaqua/danmaqua-data
 
-## API 文档
+Coding.net 中国大陆数据仓库：https://fython.coding.net/p/danmaqua/d/damaqua-data/git
+
+[客户端源码](https://github.com/fython/danmaqua-android)
 
 [API 文档](https://github.com/fython/danmaqua-android/blob/master/docs/API_DATA.md)
+
+## 如何修改、更新数据
+
+### 修改、更新虚拟主播目录
+
+在 `raw` 目录中， `groups.csv` 负责存放虚拟主播企业/团体的分类，数据列有三列：
+
+- `name`：企业/团体简写，只能写小写英文数字和下划线。
+- `title`：企业/团体正式名称
+- `icon`：企业/团体的头像地址（可留空）
+
+在 `raw/vtubers` 目录中，存放虚拟主播个人公开信息，建议按企业/团体分类保存为一个 csv 文件，数据列有六列：
+
+- `uid`：哔哩哔哩用户 ID
+- `room`：哔哩哔哩直播间号码
+- `name`：哔哩哔哩用户名称
+- `group`：所属企业/团体的对应 `name`
+- `description`：主播说明
+- `face`：头像地址
+
+以上存放在 `raw` 的文件均为原始数据，并非 Danmaqua 客户端实际访问的，为便于编辑仍必须优先提交数据到 `raw` 中。
+
+保存信息在 `raw` 文件夹中后，可以使用数据整理工具的 `make_catalog.py` 将 `csv` 数据转换为 `json` 数据并自动更新到 `room` 文件夹中，完成提交推送后，Danmaqua 客户端就能访问到新的数据了。（数据整理工具使用方法请阅读文档。）
+
+### 修改、更新推荐主播
+
+目前仅支持提起 Issue 来进行修改。
 
 ## 数据整理工具
 
