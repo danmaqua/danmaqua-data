@@ -38,11 +38,13 @@ jobs:
         git config --local user.name "GitHub Action"
         git add -A .
         git commit -m "Catalog: Auto build" -a
+      continue-on-error: true
         
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.REPO_TOKEN }}
+      continue-on-error: true
 
     - name: Sync repository to coding
       uses: wei/git-sync@v1
