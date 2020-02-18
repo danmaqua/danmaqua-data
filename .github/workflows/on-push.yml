@@ -44,12 +44,7 @@ jobs:
       with:
         github_token: ${{ secrets.REPO_TOKEN }}
 
-  repo-sync:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: repo-sync
+    - name: Sync repository to coding
       uses: wei/git-sync@v1
       env:
         SOURCE_REPO: "https://github.com/danmaqua/danmaqua-data.git"
