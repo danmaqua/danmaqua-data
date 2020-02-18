@@ -25,10 +25,7 @@ def main():
         raise Exception('No groups and vtubers data in raw folders')
     
     output_path = '../room/vtubers'
-    print('Are you sure to delete %s? (y/n)' % abspath(output_path), end='')
-    choice = input('')
-    if choice == 'y':
-        rmtree(output_path)
+    rmtree(output_path)
     if not isdir(output_path):
         mkdir(output_path)
     for group in groups:
