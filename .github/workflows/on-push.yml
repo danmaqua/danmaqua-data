@@ -1,4 +1,4 @@
-name: Make Catalog JSON from CSV
+name: Actions on Push
 
 on: [push]
 
@@ -42,3 +42,19 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.REPO_TOKEN }}
+
+  repo-sync:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: repo-sync
+      uses: wei/git-sync@v1
+      env:
+        SOURCE_REPO: "https://github.com/danmaqua/danmaqua-data.git"
+        SOURCE_BRANCH: "master"
+        DESTINATION_REPO: "git@e.coding.net:fython/danmaqua/damaqua-data.git"
+        DESTINATION_BRANCH: "master"
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      with:
+        args: $SOURCE_REPO $SOURCE_BRANCH $DESTINATION_REPO $DESTINATION_BRANCH
