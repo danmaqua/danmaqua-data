@@ -13,6 +13,17 @@
             },
             "committer": "fython",
             "pattern": "(?<who>[^〈｛『〖［〔「【]*)[〈｛『〖［〔「【](?<text>[^〉｝『〗］〕」】]*)[$〉｝『〗］〕」】]?"
+        },
+        {
+            "id": "7ebced82-147a-47e8-8981-4357c77dde4g",
+            "title": {
+                "zh": "测试规则"
+            },
+            "desc": {
+                "zh": "测试用规则，请勿使用"
+            },
+            "committer": "fython",
+            "pattern": "【(?<text>.*)】"
         }
     ]
 }
